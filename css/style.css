@@ -2615,8 +2615,10 @@ a.nav-link.add-button:not([href]):not([tabindex]):hover {
   cursor: -webkit-grab;
 }
 .stot-time input.form-control {
-  width: 38%;
+  width: 50%;
   margin: 0px 10px;
+  border: none;
+  background: #d4d7db;
 }
 .stot-time {
   display: inline-flex;
@@ -2624,6 +2626,11 @@ a.nav-link.add-button:not([href]):not([tabindex]):hover {
 }
 .stot-time span {
   margin-top: 15px;
+}
+.stot {
+  border: 1px solid #2e62ae;
+  border-top: none;
+  padding: 15px;
 }
 i.fa.fa-plus.add-time-slot {
   float: right;
@@ -2698,6 +2705,8 @@ div#add-date-slot:hover {
 }
 .add-listing-widget .form-control {
   width: 100%;
+    border: 1px solid #2e62ae;
+    border-top: none;
 }
 textarea#post-details {
   height: auto !important;
@@ -2836,13 +2845,27 @@ section.section-sm.search-results-section {
 .form-section .container {
   padding: 0px 60px;
 }
-.add-listing-widget .form-group,.add-listing-widget .form-check {
-  background: #2e62ae21;
+.add-listing-widget .form-group, .add-listing-widget .form-check {
   padding: 10px 40px;
 }
 .add-listing-widget .form-check .form-group{
   background: #2e62ae12;
   margin-top: 20px;
+}
+.add-listing-widget h5 {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 0;
+  padding: 10px;
+  border: 1px solid #2e62ae;
+  background: #80808040;
+}
+input#available-date {
+  -webkit-appearance: button;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
 }
 .hide-it{
   display:none;

@@ -212,7 +212,7 @@
                     <form action="#">
                         <!-- Category -->
                         <div class="form-group category-select" id="category-select">
-                                <h5>Select Category</h5>
+                                <h5>Select Category for the slot</h5>
                                 <select id="select-category" class="form-control" name="category">
                                     <option>Category</option>
                                     <option value="Dentist">Dentist</option>
@@ -221,7 +221,7 @@
                                     <option value="Teacher">Teacher</option>
                                 </select>
                         </div>
-                        <div class="form-group sub-category-select sub-category-select hide-it" id="sub-category-select">
+                        <!--<div class="form-group sub-category-select sub-category-select hide-it" id="sub-category-select">
                             <h5>Select Sub Category</h5>
                             <select id="select-sub-category" class="form-control" name="subcategory">
                                 <option>Sub Category</option>
@@ -230,30 +230,31 @@
                                 <option value="Hair Dresser">Hair Dresser</option>
                                 <option value="Teacher">Teacher</option>
                             </select>
-                        </div>
+                        </div>-->
                         <!-- Post title -->
                         <div class="form-group title-input hide-it" id="input-title">
-                                <h5>Enter the slot Title</h5>
-                                <input type="text" class="form-control" name="post-title" id="post-title">
+                                <h5>Slot Title</h5>
+                                <input type="text" class="form-control" name="post-title" placeholder="Enter Here" id="post-title">
                         </div>
                         <!-- Post details -->
                         <div class="form-group details-input hide-it" id="details-input">
-                            <h5>Enter the slot Details</h5>
-                                <textarea class="form-control" name="post-details" id="post-details"></textarea>
+                            <h5>Slot Details</h5>
+                                <textarea placeholder="Enter the slot details here" class="form-control" name="post-details" id="post-details"></textarea>
                         </div>
                         <!-- File chooser -->
                         <div class="form-group choose-file hide-it" id="file-chooser">
                                 <h5>Upload Image for your slot</h5>
                                 <input type="file" class="form-control-file d-inline" name="image-file" id="image-file">
-                            </div>
+                                <img class="hide-it" id="image-preview" src="#" alt="image-preview" style="width:200px" />   
+                        </div>
                         
                         <!-- Date -->
                         <div class="form-check date-pick hide-it" id="date-pick">
                               <h5>Select the Date</h5>
                               <input type="date" class="form-control-file d-inline" id="available-date">
-                              
+                             
                               <div class="form-group" id="time-slotz">
-                                  <h5>Add Time Slots</h5>
+                                  <h5>Time Slots</h5>
                                   <div id="slots"></div>
                                   <div class="add-time-slot" id="add-time-slot" onclick="addslot()">Add New Slot</div>
                               </div>
@@ -261,7 +262,7 @@
                         <!--<div class="add-time-slot" id="add-date-slot" onclick="adddate()">Add New Date</div>*-->
                         
                         <!-- Submit button -->
-                        <button class="btn btn-transparent">Save My Changes</button>
+                        <button id="submit-slot" class="btn btn-transparent hide-it">Submit the Slot</button>
                     </form>
                 </div>
 			</div>
@@ -375,7 +376,9 @@
         var global_time_slots = 0;
         var global_date_slots = 0;
         function addslot(){
-            var new_field = '<div><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><input type="time" class="form-control" name="start-time-slot-'+global_time_slots+'"><span>to</span><input type="time" class="form-control" name="end-time-slot'+global_time_slots+'"></div></div>';
+            var new_field = '<div class="stot"><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><input type="time" class="form-control" name="start-time-slot-'+global_time_slots+'"><span>to</span><input type="time" class="form-control" name="end-time-slot'+global_time_slots+'"></div></div>';
+          //  new_field ='<div class="input-group clockpicker"><input type="text" class="form-control" value="18:00"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div>';         
+         
             var currentHTML = document.getElementById("slots").innerHTML;
             currentHTML = currentHTML + new_field;
             document.getElementById("slots").innerHTML = currentHTML; 
@@ -384,6 +387,7 @@
         function adddate(){
           var ID = "'slots"+global_date_slots+"'";
           var newfield ='<h5>Select the Date</h5><input type="date" class="form-control-file d-inline available-date"><div class="form-group time-slotz" ><h5>Add Time Slots</h5><div id="'+ID+'"></div><div class="add-time-slot add-time-slot" onclick="addslot('+ID+')">Add New Slot</div></div>'
+         
           var currentHTML = document.getElementById("date-pick").innerHTML;
           currentHTML = currentHTML + newfield;
           document.getElementById("date-pick").innerHTML = currentHTML; 
@@ -398,7 +402,7 @@
     <script> 
       $( document ).ready(function() {
         $("#select-category").change(function(){
-          $("#sub-category-select").show();
+          $("#input-title").show();
         }); 
         $("#sub-category-select").change(function(){
           $("#input-title").show();
@@ -412,8 +416,39 @@
         $("#file-chooser").change(function(){
           $("#date-pick").show();
         });
+        $("#date-pick").change(function(){
+          $("#submit-slot").show();
+        });
       });
     </script>
+    <!--============================
+    =    Image preview on upload    =
+    =============================-->
+
+    <script> 
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            $('#image-preview').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      $( document ).ready(function() {
+        $("#image-file").change(function() {
+          $('#image-preview').show();
+          readURL(this);
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $('.clockpicker').clockpicker({
+          placement: 'top',
+          align: 'left',
+          donetext: 'Done'
+      });
+      </script>
 </body>
 
 </html>
