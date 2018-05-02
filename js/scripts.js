@@ -162,3 +162,4 @@ var slider = new Slider('#ex2', {});
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
