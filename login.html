@@ -65,110 +65,29 @@
 
 <body class="body-wrapper single-page">
 
-  <section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav class="navbar navbar-expand-lg  navigation">
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="">
-						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav ml-auto main-nav ">
-								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Dashboard</a>
-								</li>
-								<li class="nav-item dropdown dropdown-slide">
-									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Pages <span><i class="fa fa-angle-down"></i></span>
-									</a>
-									<!-- Dropdown list -->
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="category.html">Category</a>
-										<a class="dropdown-item" href="single.html">Single Page</a>
-										<a class="dropdown-item" href="store-single.html">Store Single</a>
-										<a class="dropdown-item" href="dashboard.html">Dashboard</a>
-										<a class="dropdown-item" href="user-profile.html">User Profile</a>
-										<a class="dropdown-item" href="submit-coupon.html">Submit Coupon</a>
-										<a class="dropdown-item" href="blog.html">Blog</a>
-										<a class="dropdown-item" href="single-blog.html">Single Post</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown dropdown-slide">
-									<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Listing <span><i class="fa fa-angle-down"></i></span>
-									</a>
-									<!-- Dropdown list -->
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</li>
-							</ul>
-							<ul class="navbar-nav ml-auto mt-10">
-								<li class="nav-item">
-									<a class="nav-link login-button" href="index.html">Login</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link add-button" href="addslot.html"><i class="fa fa-plus-circle"></i> Add Slot</a>
-								</li>
-							</ul>
-						</div>
-					
-					</nav>
-				</div>
-			</div>
-		</div>
-	</section>
-			
-<section id="category-nav-section">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<!--- Category Navigation -->
-				<nav class="navbar navbar-expand-lg  navigation category-nav">
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav m-auto main-nav ">
-								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Dentist</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Hair Dresser</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Coach</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Teacher</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Artist</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Carpenter</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-			</div>
-		</div>
-	</div>
-</section>
+<section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg  navigation">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!--============================
 =        Body Section          =
 =============================-->
 <section id="loginBody">
+       
+            <div class="row">
     <div class="container">
-            <div class="col-sm-5">
-                        	
+        
+           <div class="col-sm-12 col-md-5 col-lg-5">      	
                     <div class="form-box">
                         <div class="form-top">
                             <div class="form-top-left">
@@ -180,7 +99,7 @@
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <form role="form" action="" method="post" class="login-form">
+                            <form role="form" action="dashboard.html" method="post" class="login-form">
                                 <div class="form-group">
                                     <label class="sr-only" for="form-username">Username</label>
                                     <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
@@ -190,7 +109,9 @@
                                     <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
                                 </div>
                                 <button type="submit" class="btn">Sign in!</button>
+                                <p>*By using social login, you agree to our Terms & Conditions and Privacy Policy.</p>
                             </form>
+                            <a href="#" class="right forgot-password">Forgot your password</a>
                         </div>
                     </div>
                 
@@ -211,10 +132,10 @@
                     
                 </div>
                 
-                <div class="col-sm-1 middle-border"></div>
-                <div class="col-sm-1"></div>
+                <div class="col-sm-12 col-md-1 col-lg-1 middle-border"></div>
+                <div class="col-sm-12 col-md-1 col-lg-1"></div>
                     
-                <div class="col-sm-5">
+                <div class="col-sm-12 col-md-5 col-lg-5">
                     
                     <div class="form-box">
                         <div class="form-top">
@@ -246,7 +167,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="form-password">Password</label>
-                                    <input type="password" name="re-form-password" placeholder="Password..." class="form-password form-control" id="form-password2">
+                                    <input type="password" name="re-form-password" placeholder="Password Again..." class="form-password form-control" id="form-password2">
                                 </div>
                                 <button type="submit" class="btn">Sign me up!</button>
                             </form>
@@ -328,6 +249,7 @@
             </div>
             <div class="col-md-1"></div> -->
         </div>
+    </div>
     </div>
 </section>
 

@@ -116,7 +116,7 @@ img { max-width: 100%; }
 
 .form-top {
 	overflow: hidden;
-	padding: 0 25px 15px 25px;
+	padding: 0 25px 0px 25px;
 	background: #444;
 	background: rgba(0, 0, 0, 0.35);
 	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
@@ -227,4 +227,22 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 
 .social-login-buttons {
     display: inline-flex;
+}
+@media only screen and (max-width:570px){
+	.social-login-buttons {
+		display: block;
+		text-align: center;
+	}	
+}
+
+.form-bottom form.login-form {
+    margin: auto;
+}
+a.right.forgot-password {
+    float: right;
+    color: white;
+    font-size: 15px;
+}
+a.right.forgot-password:hover {
+    color: #19b9e7;
 }
