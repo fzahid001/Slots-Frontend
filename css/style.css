@@ -2871,7 +2871,7 @@ input#available-date {
   display:none;
 }
 section#loginBody {
-  padding: 0px 0px;
+  padding: 0px 0px 50px;
   background: #2e62ae;
 }
 #loginBody .col-sm-12.col-md-4 {
