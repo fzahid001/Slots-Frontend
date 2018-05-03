@@ -2870,3 +2870,36 @@ input#available-date {
 .hide-it{
   display:none;
 }
+section#loginBody {
+  padding: 90px 0px;
+  background: #2e62ae;
+}
+#loginBody .col-sm-12.col-md-4 {
+  background: #2e62ae;
+  padding: 40px 20px;
+  text-align: center;
+}
+h4#login-heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+#loginBody .form-control {
+  height: 30px !important;
+}
+#loginBody .form-group h5 {
+  font-size: 15px;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+form.login-form {
+  margin-top: 40px;
+}
+h4#Signup-heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
