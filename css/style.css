@@ -2903,3 +2903,6 @@ h4#Signup-heading {
   letter-spacing: 1px;
   font-size: 1.2em;
 }
+section.section.bg-gray.form-section {
+  background: #2e62ae;
+}
