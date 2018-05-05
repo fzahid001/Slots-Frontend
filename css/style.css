@@ -2913,3 +2913,58 @@ h3.enter {
   font-size: 25px;
   font-weight: 300;
 }
+.widget.dashboard-container.my-adslist h3.widget-header {
+  background: #2e62ae;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 10px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+table.table.table-responsive.product-dashboard-table {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+table.table.table-responsive.product-dashboard-table thead {
+  background: #2e62ae70;
+}
+table.table.table-responsive.product-dashboard-table tbody tr:nth-child(even) {
+  background: #a3badb;
+}
+.dashboard-container .product-dashboard-table td {
+  vertical-align: middle;
+  padding: 10px 0;
+}
+.dashboard-container .product-dashboard-table .product-details {
+  padding: 10px;
+}
+.widget.user-dashboard-menu li:hover {
+  background: #2e62ae;
+}
+
+.widget.user-dashboard-menu li {
+  background: #a3badb;
+}
+.widget.personal-info h3.widget-header.user, .widget.change-password h3.widget-header.user, .widget.change-email h3.widget-header.user{
+  background: #2e62ae;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 10px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  width: 100%;
+}
+.widget.personal-info .form-group label, .widget.change-password .form-group label, .widget.change-email .form-group label {
+  width: 100%;
+  background: #DFDFDF;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
