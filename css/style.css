@@ -2968,3 +2968,23 @@ table.table.table-responsive.product-dashboard-table tbody tr:nth-child(even) {
   padding: 10px;
   text-align: center;
 }
+.clockpicker input.form-control {
+  margin-right: 0;
+}
+.form-control+.input-group-addon:not(:first-child) {
+  border-left: 0;
+}
+.clockpicker span.glyphicon.glyphicon-time {
+  margin: 0 0px 0px 0px;
+  font-size: 15px;
+}
+.clockpicker span.input-group-addon {
+  margin: 0;
+  width: 30px;
+
+}
+span.to {
+  margin: auto;
+  margin-left: 10px;
+  font-size: 20px;
+}

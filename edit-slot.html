@@ -9,7 +9,7 @@
   <title>Calssimax</title>
   
   <!-- PLUGINS CSS STYLE -->
-   <!-- Clock Picker -->
+  <!-- Clock Picker -->
   <link rel="stylesheet" href="plugins/clockpicker/css/bootstrap-theme.css">
   <link rel="stylesheet" href="plugins/clockpicker/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="plugins/clockpicker/css/bootstrap.min.css">
@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="plugins/clockpicker/css/github.min.css">
   <link rel="stylesheet" href="plugins/clockpicker/dist/bootstrap-clockpicker.min.css">
   <link rel="stylesheet" href="plugins/clockpicker/dist/jquery-clockpicker.min.css">  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
   <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -92,54 +91,95 @@
                                 <select id="select-category" class="form-control" name="category">
                                     <option>Category</option>
                                     <option value="Dentist">Dentist</option>
-                                    <option value="Coach">Coach</option>
+                                    <option selected value="Coach">Coach</option>
                                     <option value="Hair Dresser">Hair Dresser</option>
                                     <option value="Teacher">Teacher</option>
                                 </select>
                         </div>
-                        <!--<div class="form-group sub-category-select sub-category-select hide-it" id="sub-category-select">
-                            <h5>Select Sub Category</h5>
-                            <select id="select-sub-category" class="form-control" name="subcategory">
-                                <option>Sub Category</option>
-                                <option value="Dentist">Dentist</option>
-                                <option value="Coach">Coach</option>
-                                <option value="Hair Dresser">Hair Dresser</option>
-                                <option value="Teacher">Teacher</option>
-                            </select>
-                        </div>-->
                         <!-- Post title -->
-                        <div class="form-group title-input hide-it" id="input-title">
+                        <div class="form-group title-inpu" id="input-title">
                                 <h5>Slot Title</h5>
-                                <input type="text" class="form-control" name="post-title" placeholder="Enter Here" id="post-title">
+                                <input type="text" value="Title" class="form-control" name="post-title" placeholder="Enter Here" id="post-title">
                         </div>
                         <!-- Post details -->
-                        <div class="form-group details-input hide-it" id="details-input">
+                        <div class="form-group details-input" id="details-input">
                             <h5>Slot Details</h5>
-                                <textarea placeholder="Enter the slot details here" class="form-control" name="post-details" id="post-details"></textarea>
+                                <textarea placeholder="Enter the slot details here" class="form-control" name="post-details" id="post-details">qdc sc fkfvje ksdsdjc jw cdj cddcj wjc we;c d;kfjv fcldfj</textarea>
                         </div>
                         <!-- File chooser -->
-                        <div class="form-group choose-file hide-it" id="file-chooser">
+                        <div class="form-group choose-file" id="file-chooser">
                                 <h5>Upload Image for your slot</h5>
-                                <input type="file" class="form-control-file d-inline" name="image-file" id="image-file">
-                                <img class="hide-it" id="image-preview" src="#" alt="image-preview" style="width:200px" />   
+                                <input value="images/blog/post-1.jpg" accept="image/x-png,image/gif,image/jpeg" type="file" class="form-control-file d-inline" name="image-file" id="image-file">
+                                <img class="" id="image-preview" src="images/blog/post-1.jpg" alt="image-preview" style="width:200px" />   
                         </div>
                         
                         <!-- Date -->
-                        <div class="form-check date-pick hide-it" id="date-pick">
+                        <div class="form-check date-pick" id="date-pick">
                               <h5>Select the Date</h5>
-                              <input type="date" class="form-control-file d-inline" id="available-date">
-                              
+                              <input type="date" value="2013-01-08"   class="form-control-file d-inline" id="available-date">
+                             
                               <div class="form-group" id="time-slotz">
                                   <h5>Time Slots</h5>
-                                  <div id="slots"></div>
-                                  <div class="add-time-slot" id="add-time-slot" >Add New Slot</div>
+                                  <div id="slots">
+                                  <div class="stot">
+                                    <p><strong>Slot 1</strong></p>
+                                    <div class="stot-time">
+                                      <div class="input-group clockpicker">
+                                          <input type="text" class="form-control" value="13:30" name="start-time-slot-1">
+                                          <span class="input-group-addon">
+                                              <span class="glyphicon glyphicon-time"></span>
+                                          </span>
+                                      </div>
+                                      <span class="to">to</span>
+                                      <div class="input-group clockpicker">
+                                          <input type="text" class="form-control"  value="13:30" name="end-time-slot-1">
+                                          <span class="input-group-addon">
+                                              <span class="glyphicon glyphicon-time"></span>
+                                          </span>
+                                      </div>  
+                                    </div>
+                                  </div>  
+                                  <div class="stot">
+                                      <p><strong>Slot 2</strong></p>
+                                      <div class="stot-time">
+                                        <div class="input-group clockpicker">
+                                            <input type="text" class="form-control" value="13:30" name="start-time-slot-1">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                                        </div>
+                                        <span class="to">to</span>
+                                        <div class="input-group clockpicker">
+                                            <input type="text" class="form-control"  value="13:30" name="end-time-slot-1">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                                        </div>  
+                                      </div>
+                                    </div>  
+                                    <div class="stot">
+                                        <p><strong>Slot 3</strong></p>
+                                        <div class="stot-time">
+                                          <div class="input-group clockpicker">
+                                              <input type="text" class="form-control" value="13:30" name="start-time-slot-1">
+                                              <span class="input-group-addon">
+                                                  <span class="glyphicon glyphicon-time"></span>
+                                              </span>
+                                          </div>
+                                          <span class="to">to</span>
+                                          <div class="input-group clockpicker">
+                                              <input type="text" class="form-control"  value="13:30" name="end-time-slot-1">
+                                              <span class="input-group-addon">
+                                                  <span class="glyphicon glyphicon-time"></span>
+                                              </span>
+                                          </div>  
+                                        </div>
+                                      </div> 
+                                    </div> 
                               </div>
                         </div>
-                        <!--<div class="add-time-slot" id="add-date-slot" onclick="adddate()">Add New Date</div>*-->
-                        
-                        <!-- Submit button -->
-                        <button id="submit-slot" class="btn btn-transparent hide-it">Submit the Slot</button>
-                    </form>
+                         
+                     </form>
                 </div>
 			</div>
 			
@@ -247,63 +287,26 @@
     <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
     <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-    
-    <!-- Time Picker -->
+  
     <script src="plugins/clockpicker/dist/bootstrap-clockpicker.min.js"></script>
     <script src="plugins/clockpicker/dist/jquery-clockpicker.min.js"></script>
     <script src="plugins/clockpicker/js/bootstrap.min.js"></script>
     <script src="plugins/clockpicker/js/highlight.min.js"></script>
     <script src="plugins/clockpicker/js/html5shiv.js"></script>
     <script src="plugins/clockpicker/js/respond.min.js"></script>
-   <!-- Custom JS -->
+
     <script src="js/scripts.js"></script>
   
-    <script> 
-    var global_time_slots = 1;
-    var global_date_slots = 1;
-      
-    $( document ).ready(function() {
-      $("#add-time-slot").click(function(){
-        //$("#slots").append('<div class="stot "><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><input type="time" class="form-control" name="start-time-slot-'+global_time_slots+'"><span>to</span><input type="time" class="form-control" name="end-time-slot'+global_time_slots+'"></div></div>');
-        $("#slots").append('<div class="stot"><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><div class="input-group clockpicker"><input type="text" class="form-control" value="13:30" name="start-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div><span class="to">to</span><div class="input-group clockpicker"><input type="text" class="form-control"  value="13:30" name="end-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div></div></div>');
-        global_time_slots = global_time_slots + 1;
-      }); 
-      $("#add-time-slot").click(function(){
-        $('.clockpicker').clockpicker({
+ 
+    <script type="text/javascript">
+      $('.clockpicker').clockpicker({
             placement: 'bottom',
             align: 'right',
             donetext: 'Done'
         });
-      });
-    });
+      
       </script>
       
-    <!--============================
-    =    Form Conditional Logic    =
-    =============================-->
-
-    <script> 
-      $( document ).ready(function() {
-        $("#select-category").change(function(){
-          $("#input-title").show();
-        }); 
-        $("#sub-category-select").change(function(){
-          $("#input-title").show();
-        });  
-        $("#input-title").keyup(function(){
-          $("#details-input").show();
-        });
-        $("#details-input").keyup(function(){
-          $("#file-chooser").show();
-        });
-        $("#file-chooser").change(function(){
-          $("#date-pick").show();
-        });
-        $("#date-pick").change(function(){
-          $("#submit-slot").show();
-        });
-      });
-    </script>
     <!--============================
     =    Image preview on upload    =
     =============================-->
@@ -325,24 +328,7 @@
         });
       });
     </script>
-    <!--============================
-    =    Clock Picker     =
-    =============================-->
-
-    <script type="text/javascript">
-    $("#slots").change(function(){
-      $('.clockpicker').clockpicker({
-          placement: 'bottom',
-          align: 'right',
-          donetext: 'Done'
-      });
-    });
-    $('.clockpicker').clockpicker({
-          placement: 'bottom',
-          align: 'right',
-          donetext: 'Done'
-      });
-      </script>
+  
 </body>
 
 </html>
