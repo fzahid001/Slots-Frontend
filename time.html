@@ -118,11 +118,6 @@
             //$("#slots").append('<div class="stot "><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><input type="time" class="form-control" name="start-time-slot-'+global_time_slots+'"><span>to</span><input type="time" class="form-control" name="end-time-slot'+global_time_slots+'"></div></div>');
             $("#slots").append('<div class="stot"><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><div class="input-group clockpicker"><input type="text" class="form-control" value="13:30" name="start-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div><span class="to">to</span><div class="input-group clockpicker"><input type="text" class="form-control"  value="13:30" name="end-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div></div></div>');
             global_time_slots = global_time_slots + 1;
-            jQuery('.clockpicker').clockpicker({
-          placement: 'bottom',
-          align: 'right',
-          donetext: 'Done'
-      });
           }); 
         });
     </script>

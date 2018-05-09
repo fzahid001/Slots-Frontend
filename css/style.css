@@ -2522,9 +2522,7 @@ article.single-post p {
 .search-result.bg-gray {
   background: #2e62ae1f;
 }
-.cat-box-custom .card {
-  /*border: 2px solid #2e62ae;*/
-}
+
 .cat-box-custom .card:hover {
   transform: scale(1.1);
   /*border: 1px solid #2e62ae;*/
