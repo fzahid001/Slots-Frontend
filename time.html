@@ -28,6 +28,11 @@
   <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
   <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
   <link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+  
+    <link rel="stylesh	eet" href="plugins/countrypicker/css/countrySelect.css">
+		<link rel="stylesheet" href="plugins/countrypicker/css/demo.css">
+
+  
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -41,6 +46,66 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+<style>
+    body{
+  padding-top:50px;
+  background: #555;
+}
+.flip {
+  -webkit-perspective: 800;   
+          perspective: 800;
+        position: relative;
+        text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+.flip .card {
+    width: 270px;
+    height: 178px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #fff;
+   
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+   z-index: 2;
+}
+.flip .card .front {
+   position: absolute;
+   width: 270px;
+   z-index: 1;
+}
+.flip .card .img {
+   position: relaitve;
+   width: 270px;
+   height: 178px;
+   z-index: 1;
+   border: 2px solid #000;
+}
+.flip .card .back {
+  padding-top: 10%;
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+  .inner{
+      padding: 25px;
+      margin:0px !important;
+    }
+
+  .face.front img{
+      width:90px;
+  }
+  .flip-col {
+    margin-top: 10px;
+}
+</style>
+
 </head>
 
 <body class="body-wrapper single-page">
@@ -50,19 +115,202 @@
 ====================================-->
 
 	<!-- Container Start -->
-  <div class="container">
-      <div class='col-md-12'>
-          <div class="form-group" id="time-slotz">
-              <h5>Time Slots</h5>
-              <div id="slots">
-
-                     </div>
-              <div class="add-time-slot" id="add-time-slot" >Add New Slot</div>
-          </div>
-      </div>
-      
-  </div>
- 
+    <section class=" section">
+        	<div class="section-title">
+					<h2>All Categories</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
+				</div>
+        <!-- Container Start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 flip-col">
+                      <div class="flip">
+                        <div class="card"> 
+                          <div class="face front"> 
+                            <div class="inner">   
+                              <img src="images/categories/tooth.png">
+                              <h3>Dentist</h3>
+                            </div>
+                          </div> 
+                          <div class="face back"> 
+                            <div class="inner text-center"> 
+                                <h4>Dentist</h4>
+                                <ul class="category-list" >
+                                    <li><a href="category.html">Laptops <span>93</span></a></li>
+                                    <li><a href="category.html">Iphone <span>233</span></a></li>
+                                    <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                    <li><a href="category.html">Monitors <span>343</span></a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>	 
+                      </div>
+                    </div>
+                  <div class="col-sm-3 flip-col">
+                      <div class="flip">
+                        <div class="card"> 
+                          <div class="face front"> 
+                            <div class="inner">   
+                              <img src="images/categories/hairdresser.png">
+                              <h3>Hair Dresser</h3>
+                            </div>
+                          </div> 
+                          <div class="face back"> 
+                            <div class="inner text-center"> 
+                              <h4>Hair Dresser</h4>
+                              <ul class="category-list" >
+                                    <li><a href="category.html">Laptops <span>93</span></a></li>
+                                    <li><a href="category.html">Iphone <span>233</span></a></li>
+                                    <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                    <li><a href="category.html">Monitors <span>343</span></a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>	 
+                      </div>
+                    </div>
+                  <div class="col-sm-3 flip-col">
+                      <div class="flip">
+                        <div class="card"> 
+                          <div class="face front"> 
+                            <div class="inner">   
+                              <img src="images/categories/nail-polish.png">
+                              <h3>Nail Artist</h3>
+                            </div>
+                          </div> 
+                          <div class="face back"> 
+                            <div class="inner text-center"> 
+                                <h4>Nail Artist</h4>
+                              <ul class="category-list" >
+                                    <li><a href="category.html">Laptops <span>93</span></a></li>
+                                    <li><a href="category.html">Iphone <span>233</span></a></li>
+                                    <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                    <li><a href="category.html">Monitors <span>343</span></a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>	 
+                      </div>
+                    </div>
+                  <div class="col-sm-3 flip-col">
+                      <div class="flip">
+                        <div class="card"> 
+                          <div class="face front"> 
+                            <div class="inner">   
+                              <img src="images/categories/coach.png">
+                              <h3>Coach</h3>
+                            </div>
+                          </div> 
+                          <div class="face back"> 
+                            <div class="inner text-center"> 
+                                    <h4>Coach</h4>
+                              <ul class="category-list" >
+                                    <li><a href="category.html">Laptops <span>93</span></a></li>
+                                    <li><a href="category.html">Iphone <span>233</span></a></li>
+                                    <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                    <li><a href="category.html">Monitors <span>343</span></a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>	 
+                      </div>
+                    </div>
+                    <div class="col-sm-3 flip-col">
+                        <div class="flip">
+                            <div class="card"> 
+                            <div class="face front"> 
+                                <div class="inner">   
+                                <img src="images/categories/tennis-court.png">
+                                <h3>Tennis Court</h3>
+                                </div>
+                            </div> 
+                            <div class="face back"> 
+                                <div class="inner text-center"> 
+                                        <h4>Tennis Court</h4>
+                                <ul class="category-list" >
+                                    <li><a href="category.html">Laptops <span>93</span></a></li>
+                                    <li><a href="category.html">Iphone <span>233</span></a></li>
+                                    <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                    <li><a href="category.html">Monitors <span>343</span></a></li>
+                                </ul>
+                                </div>
+                            </div>
+                            </div>	 
+                        </div>
+                    </div>
+                    <div class="col-sm-3 flip-col">
+                        <div class="flip">
+                            <div class="card"> 
+                            <div class="face front"> 
+                                <div class="inner">   
+                                <img src="images/categories/squash.png">
+                                <h3>Squash Court</h3>
+                                </div>
+                            </div> 
+                            <div class="face back"> 
+                                <div class="inner text-center"> 
+                                        <h4>Squash Court</h4>
+                                <ul class="category-list" >
+                                    <li><a href="category.html">Laptops <span>93</span></a></li>
+                                    <li><a href="category.html">Iphone <span>233</span></a></li>
+                                    <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                    <li><a href="category.html">Monitors <span>343</span></a></li>
+                                </ul>
+                                </div>
+                            </div>
+                            </div>	 
+                        </div>
+                    </div>
+                    <div class="col-sm-3 flip-col">
+                        <div class="flip">
+                            <div class="card"> 
+                                <div class="face front"> 
+                                    <div class="inner">   
+                                        <img src="images/categories/football-field.png">
+                                        <h3>Football Court</h3>
+                                    </div>
+                                </div> 
+                                <div class="face back"> 
+                                    <div class="inner text-center"> 
+                                            <h4>Football Court</h4>
+                                        <ul class="category-list" >
+                                            <li><a href="category.html">Laptops <span>93</span></a></li>
+                                            <li><a href="category.html">Iphone <span>233</span></a></li>
+                                            <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                            <li><a href="category.html">Monitors <span>343</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>	 
+                        </div>
+                    </div>
+                    <div class="col-sm-3 flip-col">
+                      <div class="flip">
+                        <div class="card"> 
+                          <div class="face front"> 
+                            <div class="inner">   
+                              <img src="images/categories/Teacher.png">
+                              <h3>Teacher</h3>
+                            </div>
+                          </div> 
+                          <div class="face back"> 
+                            <div class="inner text-center"> 
+                                    <h4>Teacher</h4>
+                                    <ul class="category-list" >
+                                            <li><a href="category.html">Laptops <span>93</span></a></li>
+                                            <li><a href="category.html">Iphone <span>233</span></a></li>
+                                            <li><a href="category.html">Microsoft  <span>183</span></a></li>
+                                            <li><a href="category.html">Monitors <span>343</span></a></li>
+                                        </ul>
+                            </div>
+                          </div>
+                        </div>	 
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <!-- Container End -->
+    </section>
 	<!-- Container End -->
 
 
@@ -92,37 +340,19 @@
     <script src="plugins/clockpicker/js/highlight.min.js"></script>
     <script src="plugins/clockpicker/js/html5shiv.js"></script>
     <script src="plugins/clockpicker/js/respond.min.js"></script>
-    
+
+    <script src="plugins/countrypicker/js/countrySelect.js"></script>
+ 
+   
     <script src="js/scripts.js"></script>
    
+    <script>
+		$('.flip').hover(function(){
+            $(this).find('.card').toggleClass('flipped');
+        });
+		</script>
   
    
-    <script type="text/javascript">
-    $('.clockpicker').clockpicker({
-          placement: 'bottom',
-          align: 'right',
-          donetext: 'Done'
-      });
-    
-          $("#add-time-slot").click(function(){
-            $('.clockpicker').clockpicker({
-                placement: 'bottom',
-                align: 'right',
-                donetext: 'Done'
-            });
-          });
-    
-       var global_time_slots = 1;
-      $( document ).ready(function() {
-          $("#add-time-slot").click(function(){
-            //$("#slots").append('<div class="stot "><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><input type="time" class="form-control" name="start-time-slot-'+global_time_slots+'"><span>to</span><input type="time" class="form-control" name="end-time-slot'+global_time_slots+'"></div></div>');
-            $("#slots").append('<div class="stot"><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><div class="input-group clockpicker"><input type="text" class="form-control" value="13:30" name="start-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div><span class="to">to</span><div class="input-group clockpicker"><input type="text" class="form-control"  value="13:30" name="end-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div></div></div>');
-            global_time_slots = global_time_slots + 1;
-          }); 
-        });
-    </script>
-    
-  
    
 </body>
 
