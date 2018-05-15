@@ -120,7 +120,11 @@
                         <!-- File chooser -->
                         <div class="col-md-12 form-group choose-file hide-it" id="file-chooser">
                                 <h5>Upload Image for your slot</h5>
-                                <input type="file" class="form-control-file d-inline" name="image-file" id="image-file">
+                                <label for="image-file" class="custom-file-upload">
+                                    <i class="fa fa-cloud-upload"></i> Upload Image
+                                </label>
+                                <input name="image-file" id="image-file" class="form-control-file d-inline" type="file"/>
+                                <!--<input type="file" class="form-control-file d-inline" name="image-file" id="image-file">-->
                                 <img class="hide-it" id="image-preview" src="#" alt="image-preview" style="width:200px" />   
                         </div>
                         
@@ -130,9 +134,11 @@
                               <input type="date" class="form-control-file d-inline" id="available-date">
                               
                               <div class="form-group" id="time-slotz">
-                                  <h5>Time Slots</h5>
-                                  <div id="slots"></div>
+                                <div class="d-flex">
+                                  <h5 class="time-slot-head">Time Slots</h5>
                                   <div class="add-time-slot" id="add-time-slot" >Add New Slot</div>
+                                </div>
+                                  <div id="slots" class="row"></div>
                               </div>
                         </div>
                         <!--<div class="add-time-slot" id="add-date-slot" onclick="adddate()">Add New Date</div>*-->
@@ -151,47 +157,34 @@
 =            Footer            =
 =============================-->
 
+
 <footer class="footer section section-sm">
   <!-- Container Start -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+      <div class="col-md-4">
         <!-- About -->
         <div class="block about">
           <!-- footer logo -->
-          <img src="images/logo-footer.png" alt="">
+          <img src="images/logo.png" alt="">
           <!-- description -->
           <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
       <!-- Link list -->
-      <div class="col-lg-2 offset-lg-1 col-md-3">
+      <div class="col-md-4 site-pages">
         <div class="block">
           <h4>Site Pages</h4>
           <ul>
-            <li><a href="#">Boston</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="#">How It works</a></li>
-            <li><a href="#">Deals & Coupons</a></li>
-            <li><a href="#">Articls & Tips</a></li>
-            <li><a href="#">Terms of Services</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Link list -->
-      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
-        <div class="block">
-          <h4>Admin Pages</h4>
-          <ul>
-            <li><a href="#">Boston</a></li>
-            <li><a href="#">How It works</a></li>
-            <li><a href="#">Deals & Coupons</a></li>
-            <li><a href="#">Articls & Tips</a></li>
+            <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Services</a></li>
           </ul>
         </div>
       </div>
       <!-- Promotion -->
-      <div class="col-lg-4 col-md-7">
+      <div class="col-md-4">
         <!-- App promotion -->
         <div class="block-2 app-promotion">
           <a href="">
@@ -199,7 +192,11 @@
             <img src="images/footer/phone-icon.png" alt="mobile-icon">
           </a>
           <p>Get the Dealsy Mobile App and Save more</p>
-        </div>
+				</div>
+				<div class="application-link">
+					<img src="images/play-store-icon.png"/>
+					<img src="images/app_store.png" >
+				</div>
       </div>
     </div>
   </div>
@@ -210,21 +207,20 @@
     <!-- Container Start -->
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-12">
-          <!-- Copyright -->
-          <div class="copyright">
-            <p>Copyright © 2016. All Rights Reserved</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-12">
-          <!-- Social Icons -->
+        <div class="col-sm-6 col-md-12">
+					<!-- Social Icons -->
           <ul class="social-media-icons text-right">
-              <li><a class="fa fa-facebook" href=""></a></li>
-              <li><a class="fa fa-twitter" href=""></a></li>
-              <li><a class="fa fa-pinterest-p" href=""></a></li>
-              <li><a class="fa fa-vimeo" href=""></a></li>
+              <li><a href="http://facebook.com"><img src="images/facebook.png" ></a></li>
+              <li><a href="http://twitter.com"><img src="images/twitter.png" ></a></li>
+              <li><a href="http://linkedin.com"><img src="images/linkedin.png" ></a></li>
             </ul>
-        </div>
+				</div>
+				<div class="col-sm-6 col-md-12">
+					<!-- Copyright -->
+					<div class="copyright">
+						<p>Copyright © 2016. All Rights Reserved</p>
+					</div>
+				</div>
       </div>
     </div>
     <!-- Container End -->
@@ -233,7 +229,6 @@
       <a id="top" class="" href=""><i class="fa fa-angle-up"></i></a>
     </div>
 </footer>
-
   <!-- JAVASCRIPTS -->
     <script src="plugins/jquery/dist/jquery.min.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -265,7 +260,7 @@
     $( document ).ready(function() {
       $("#add-time-slot").click(function(){
         //$("#slots").append('<div class="stot "><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><input type="time" class="form-control" name="start-time-slot-'+global_time_slots+'"><span>to</span><input type="time" class="form-control" name="end-time-slot'+global_time_slots+'"></div></div>');
-        $("#slots").append('<div class="stot"><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><div class="input-group clockpicker"><input type="text" class="form-control" value="13:30" name="start-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div><span class="to">to</span><div class="input-group clockpicker"><input type="text" class="form-control"  value="13:30" name="end-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div></div></div>');
+        $("#slots").append('<div class="stot col-md-6"><p><strong>Slot '+global_time_slots+'</strong></p><div class="stot-time"><div class="input-group clockpicker"><input type="text" class="form-control" value="13:30" name="start-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div><span class="to">to</span><div class="input-group clockpicker"><input type="text" class="form-control"  value="13:30" name="end-time-slot-'+global_time_slots+'"><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div></div></div>');
         global_time_slots = global_time_slots + 1;
       }); 
       $("#add-time-slot").click(function(){

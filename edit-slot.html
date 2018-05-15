@@ -86,7 +86,7 @@
                     <!--<h3 class="widget-header user"></h3>-->
                     <form action="#">
                         <!-- Category -->
-                        <div class="form-group category-select" id="category-select">
+                        <div class="col-md-12 col-lg-6 form-group category-select" id="category-select">
                                 <h5>Select Category for the slot</h5>
                                 <select id="select-category" class="form-control" name="category">
                                     <option>Category</option>
@@ -97,31 +97,31 @@
                                 </select>
                         </div>
                         <!-- Post title -->
-                        <div class="form-group title-inpu" id="input-title">
+                        <div class="col-md-12 col-lg-6  form-group title-input" id="input-title">
                                 <h5>Slot Title</h5>
                                 <input type="text" value="Title" class="form-control" name="post-title" placeholder="Enter Here" id="post-title">
                         </div>
                         <!-- Post details -->
-                        <div class="form-group details-input" id="details-input">
+                        <div class="col-md-12 form-group details-input " id="details-input">
                             <h5>Slot Details</h5>
                                 <textarea placeholder="Enter the slot details here" class="form-control" name="post-details" id="post-details">qdc sc fkfvje ksdsdjc jw cdj cddcj wjc we;c d;kfjv fcldfj</textarea>
                         </div>
                         <!-- File chooser -->
-                        <div class="form-group choose-file" id="file-chooser">
+                        <div class="col-md-12 form-group choose-file" id="file-chooser">
                                 <h5>Upload Image for your slot</h5>
                                 <input value="images/blog/post-1.jpg" accept="image/x-png,image/gif,image/jpeg" type="file" class="form-control-file d-inline" name="image-file" id="image-file">
-                                <img class="" id="image-preview" src="images/blog/post-1.jpg" alt="image-preview" style="width:200px" />   
+                                <img class="" id="image-preview" src="images/blog/post-1.jpg" alt="image-preview" />   
                         </div>
                         
                         <!-- Date -->
-                        <div class="form-check date-pick" id="date-pick">
+                        <div class="col-md-12 form-check date-pick" id="date-pick">
                               <h5>Select the Date</h5>
                               <input type="date" value="2013-01-08"   class="form-control-file d-inline" id="available-date">
                              
                               <div class="form-group" id="time-slotz">
                                   <h5>Time Slots</h5>
                                   <div id="slots">
-                                  <div class="stot">
+                                  <div class="col-md-12 col-lg-6 stot">
                                     <p><strong>Slot 1</strong></p>
                                     <div class="stot-time">
                                       <div class="input-group clockpicker">
@@ -139,7 +139,7 @@
                                       </div>  
                                     </div>
                                   </div>  
-                                  <div class="stot">
+                                  <div class="col-md-12 col-lg-6 stot">
                                       <p><strong>Slot 2</strong></p>
                                       <div class="stot-time">
                                         <div class="input-group clockpicker">
@@ -157,7 +157,7 @@
                                         </div>  
                                       </div>
                                     </div>  
-                                    <div class="stot">
+                                    <div class="col-md-12 col-lg-6 stot">
                                         <p><strong>Slot 3</strong></p>
                                         <div class="stot-time">
                                           <div class="input-group clockpicker">
@@ -195,43 +195,29 @@
   <!-- Container Start -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+      <div class="col-md-4">
         <!-- About -->
         <div class="block about">
           <!-- footer logo -->
-          <img src="images/logo-footer.png" alt="">
+          <img src="images/logo.png" alt="">
           <!-- description -->
           <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
       <!-- Link list -->
-      <div class="col-lg-2 offset-lg-1 col-md-3">
+      <div class="col-md-4 site-pages">
         <div class="block">
           <h4>Site Pages</h4>
           <ul>
-            <li><a href="#">Boston</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="#">How It works</a></li>
-            <li><a href="#">Deals & Coupons</a></li>
-            <li><a href="#">Articls & Tips</a></li>
-            <li><a href="#">Terms of Services</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Link list -->
-      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
-        <div class="block">
-          <h4>Admin Pages</h4>
-          <ul>
-            <li><a href="#">Boston</a></li>
-            <li><a href="#">How It works</a></li>
-            <li><a href="#">Deals & Coupons</a></li>
-            <li><a href="#">Articls & Tips</a></li>
+            <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Services</a></li>
           </ul>
         </div>
       </div>
       <!-- Promotion -->
-      <div class="col-lg-4 col-md-7">
+      <div class="col-md-4">
         <!-- App promotion -->
         <div class="block-2 app-promotion">
           <a href="">
@@ -239,7 +225,11 @@
             <img src="images/footer/phone-icon.png" alt="mobile-icon">
           </a>
           <p>Get the Dealsy Mobile App and Save more</p>
-        </div>
+				</div>
+				<div class="application-link">
+					<img src="images/play-store-icon.png"/>
+					<img src="images/app_store.png" >
+				</div>
       </div>
     </div>
   </div>
@@ -250,21 +240,20 @@
     <!-- Container Start -->
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-12">
-          <!-- Copyright -->
-          <div class="copyright">
-            <p>Copyright © 2016. All Rights Reserved</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-12">
-          <!-- Social Icons -->
+        <div class="col-sm-6 col-md-12">
+					<!-- Social Icons -->
           <ul class="social-media-icons text-right">
-              <li><a class="fa fa-facebook" href=""></a></li>
-              <li><a class="fa fa-twitter" href=""></a></li>
-              <li><a class="fa fa-pinterest-p" href=""></a></li>
-              <li><a class="fa fa-vimeo" href=""></a></li>
+              <li><a href="http://facebook.com"><img src="images/facebook.png" ></a></li>
+              <li><a href="http://twitter.com"><img src="images/twitter.png" ></a></li>
+              <li><a href="http://linkedin.com"><img src="images/linkedin.png" ></a></li>
             </ul>
-        </div>
+				</div>
+				<div class="col-sm-6 col-md-12">
+					<!-- Copyright -->
+					<div class="copyright">
+						<p>Copyright © 2016. All Rights Reserved</p>
+					</div>
+				</div>
       </div>
     </div>
     <!-- Container End -->
@@ -273,7 +262,6 @@
       <a id="top" class="" href=""><i class="fa fa-angle-up"></i></a>
     </div>
 </footer>
-
   <!-- JAVASCRIPTS -->
     <script src="plugins/jquery/dist/jquery.min.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>

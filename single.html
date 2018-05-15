@@ -46,48 +46,9 @@
 						<a class="navbar-brand" href="index.html">
 							<img src="images/logo.png" alt="">
 						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav ml-auto main-nav ">
-								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Dashboard</a>
-								</li>
-								<li class="nav-item dropdown dropdown-slide">
-									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Pages <span><i class="fa fa-angle-down"></i></span>
-									</a>
-									<!-- Dropdown list -->
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="category.html">Category</a>
-										<a class="dropdown-item" href="single.html">Single Page</a>
-										<a class="dropdown-item" href="store-single.html">Store Single</a>
-										<a class="dropdown-item" href="dashboard.html">Dashboard</a>
-										<a class="dropdown-item" href="user-profile.html">User Profile</a>
-										<a class="dropdown-item" href="submit-coupon.html">Submit Coupon</a>
-										<a class="dropdown-item" href="blog.html">Blog</a>
-										<a class="dropdown-item" href="single-blog.html">Single Post</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown dropdown-slide">
-									<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Listing <span><i class="fa fa-angle-down"></i></span>
-									</a>
-									<!-- Dropdown list -->
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</li>
-							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-									<a class="nav-link login-button" href="index.html">Login</a>
+									<a class="nav-link login-button" href="login.html">Login</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link add-button" href="addslot.html"><i class="fa fa-plus-circle"></i> Add Slot</a>
@@ -100,46 +61,11 @@
 			</div>
 		</div>
 	</section>
-			
-<section id="category-nav-section">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<!--- Category Navigation -->
-				<nav class="navbar navbar-expand-lg  navigation category-nav">
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav m-auto main-nav ">
-								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Dentist</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Hair Dresser</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Coach</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Teacher</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Artist</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="dashboard.html">Carpenter</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!--===============================
 =            Search Area            =
 ================================-->
 <section class="advances-search">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<!-- Advance Search -->
@@ -147,7 +73,7 @@
 						<form action="search.html" method="GET">
 							<div class="row">
 								<!-- Store Search -->
-								<div class="col-lg-4 col-md-12">
+								<div class="col-lg-5 col-md-5 col-sm-8 d-flex-col">
 										<div class="block d-flex">
 												<select class="form-control dropdown-product selectpicker" name="product-cat" >
 														<option value="0">All Categories</option>
@@ -164,10 +90,10 @@
 											<span class="search-helper">within</span>
 										</div>
 									</div>
-								<div class="col-lg-4 col-md-12 distance-search">
+								<div class="col-lg-2 col-md-2 col-sm-4 distance-search">
 								
 										<div class="block d-flex slide-range">
-												<p>Radius: <strong><span id="distance-content"></span> miles</strong></p>
+												<p> <strong><span id="distance-content"></span> miles</strong></p>
 												<div class="slidecontainer">
 														<input type="range" min="0" max="20" step="5" value="10" class="slider" id="distance-select">
 													</div>
@@ -183,11 +109,13 @@
 									
 										</div>
 									</div>
-									<div class="col-lg-4 col-md-12">
+									<div class="col-lg-4 col-md-4 country-col">
 										<div class="d-flex">
-											
+												<span class="search-helper">of</span>
 											<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="place" placeholder="Location">
-											<button class="btn btn-main search-submit">SEARCH</button>
+											
+											 
+											 <button class="btn btn-main search-submit">SEARCH</button>
 										</div>
 									</div>
 								
@@ -225,13 +153,13 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/products/products-1.jpg" alt="First slide">
+								<img class="d-block w-60 m-auto" src="images/products/products-1.jpg" alt="First slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/products/products-2.jpg" alt="Second slide">
+								<img class="d-block w-60 m-auto" src="images/products/products-2.jpg" alt="Second slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/products/products-3.jpg" alt="Third slide">
+								<img class="d-block w-60 m-auto" src="images/products/products-3.jpg" alt="Third slide">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -364,6 +292,8 @@
 						<img class="rounded-circle" src="images/user/user-thumb.jpg" alt="">
 						<h4><a href="">Company Name</a></h4>
 						<p class="member-time">Member Since Jun 27, 2017</p>
+						<p class="member-time">Contact: xxxxxxxx</p>
+						<p class="member-time">Email: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
 						<a href="">See all ads</a>
 					</div>
 					<!-- Map Widget -->
@@ -372,26 +302,6 @@
 							<div id="map"></div>
 						</div>
 					</div>
-					<!-- Safety tips widget -->
-					<div class="widget disclaimer">
-						<h5 class="widget-header">Safety Tips</h5>
-						<ul>
-							<li>Meet seller at a public place</li>
-							<li>Check the item before you buy</li>
-							<li>Pay only after collecting the item</li>
-							<li>Pay only after collecting the item</li>
-						</ul>
-					</div>
-					<!-- Coupon Widget -->
-					<div class="widget coupon text-center">
-						<!-- Coupon description -->
-						<p>Have a great product to post ? Share it with
-							your fellow users.
-						</p>
-						<!-- Submii button -->
-						<a href="" class="btn btn-transparent-white">Submit Listing</a>
-					</div>
-					
 				</div>
 			</div>
 			
@@ -407,43 +317,29 @@
   <!-- Container Start -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+      <div class="col-md-4">
         <!-- About -->
         <div class="block about">
           <!-- footer logo -->
-          <img src="images/logo-footer.png" alt="">
+          <img src="images/logo.png" alt="">
           <!-- description -->
           <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
       <!-- Link list -->
-      <div class="col-lg-2 offset-lg-1 col-md-3">
+      <div class="col-md-4 site-pages">
         <div class="block">
           <h4>Site Pages</h4>
           <ul>
-            <li><a href="#">Boston</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="#">How It works</a></li>
-            <li><a href="#">Deals & Coupons</a></li>
-            <li><a href="#">Articls & Tips</a></li>
-            <li><a href="#">Terms of Services</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Link list -->
-      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
-        <div class="block">
-          <h4>Admin Pages</h4>
-          <ul>
-            <li><a href="#">Boston</a></li>
-            <li><a href="#">How It works</a></li>
-            <li><a href="#">Deals & Coupons</a></li>
-            <li><a href="#">Articls & Tips</a></li>
+            <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Services</a></li>
           </ul>
         </div>
       </div>
       <!-- Promotion -->
-      <div class="col-lg-4 col-md-7">
+      <div class="col-md-4">
         <!-- App promotion -->
         <div class="block-2 app-promotion">
           <a href="">
@@ -451,7 +347,11 @@
             <img src="images/footer/phone-icon.png" alt="mobile-icon">
           </a>
           <p>Get the Dealsy Mobile App and Save more</p>
-        </div>
+				</div>
+				<div class="application-link">
+					<img src="images/play-store-icon.png"/>
+					<img src="images/app_store.png" >
+				</div>
       </div>
     </div>
   </div>
@@ -462,21 +362,20 @@
     <!-- Container Start -->
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-12">
-          <!-- Copyright -->
-          <div class="copyright">
-            <p>Copyright © 2016. All Rights Reserved</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-12">
-          <!-- Social Icons -->
+        <div class="col-sm-6 col-md-12">
+					<!-- Social Icons -->
           <ul class="social-media-icons text-right">
-              <li><a class="fa fa-facebook" href=""></a></li>
-              <li><a class="fa fa-twitter" href=""></a></li>
-              <li><a class="fa fa-pinterest-p" href=""></a></li>
-              <li><a class="fa fa-vimeo" href=""></a></li>
+              <li><a href="http://facebook.com"><img src="images/facebook.png" ></a></li>
+              <li><a href="http://twitter.com"><img src="images/twitter.png" ></a></li>
+              <li><a href="http://linkedin.com"><img src="images/linkedin.png" ></a></li>
             </ul>
-        </div>
+				</div>
+				<div class="col-sm-6 col-md-12">
+					<!-- Copyright -->
+					<div class="copyright">
+						<p>Copyright © 2016. All Rights Reserved</p>
+					</div>
+				</div>
       </div>
     </div>
     <!-- Container End -->
@@ -502,13 +401,13 @@
   <script src="js/scripts.js"></script>
 	<script>
 			function myMap() {
-			var mapCanvas = document.getElementById("map");
-			var mapOptions = {
-				center: new google.maps.LatLng(51.5, -0.2),
-				zoom: 10
-			};
-			var map = new google.maps.Map(mapCanvas, mapOptions);
-		}	
+		var mapCanvas = document.getElementById("nearby-map");
+		var mapOptions = {
+			center: new google.maps.LatLng(51.5, -0.2),
+			zoom: 10
+		};
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+	}
 		</script>
 </body>
 
