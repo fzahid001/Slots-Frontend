@@ -80,151 +80,68 @@
   <!--===================================
 =            Store Section            =
 ====================================-->
-  <section class="section bg-gray form-section" id="form-section">
+  <section class="section bg-gray form-section">
     <!-- Container Start -->
     <div class="container">
       <div class="row">
-        <form action="#" style="width: 100%;">
-          <div class="col-sm-12">
-            <h4 class="add-slot-heading">Post a slot</h4>
-          </div>
-          <div class="col-md-12">
-            <div class="block-head">
-              <h4>Select Category</h4>
-            </div>
-            <div class="block-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="category" name="category">
-                  <p class="helping">Browse for all Categories</p>
-                </div>
-                <div class="col-md-3">
-                  <div id="main-categories">
-                    <select name="main-category">
-                      <option value="">Dentist</option>
-                      <option value="">Teacher</option>
-                      <option value="">Coach</option>
-                      <option value="">Hair Dresser</option>
-                      <option value="">Nail Art</option>
-                      <option value="">Football Court</option>
-                      <option value="">Tennis Court</option>
-                      <option value="">Squash Court</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div id="sub-categories">
-                    <select name="main-category">
-                      <option value="">Dentist</option>
-                      <option value="">Teacher</option>
-                      <option value="">Coach</option>
-                      <option value="">Hair Dresser</option>
-                      <option value="">Nail Art</option>
-                      <option value="">Football Court</option>
-                      <option value="">Tennis Court</option>
-                      <option value="">Squash Court</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <input type="button" value="Continue" class="continue">
-                </div>
+        <div class="col-md-12">
+          <h3 class="enter"> Enter the required Information for your Slot </h3>
+          <div class="widget add-listing-widget ">
+            <!--<h3 class="widget-header user"></h3>-->
+            <form action="#">
+              <!-- Category -->
+              <div class="col-md-6 form-group category-select" id="category-select">
+                <h5>Select Category for the slot</h5>
+                <select id="select-category" class="form-control" name="category">
+                  <option>Category</option>
+                  <option value="Dentist">Dentist</option>
+                  <option value="Coach">Coach</option>
+                  <option value="Hair Dresser">Hair Dresser</option>
+                  <option value="Teacher">Teacher</option>
+                </select>
               </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="block-head">
-              <h4>Location</h4>
-            </div>
-            <div class="block-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="location" name="location" id="location">
-                  <p class="helping">Select Location</p>
-                </div>
-                <div class="col-md-6">
-                  <div id="us2" style="width: 300px; height: 300px;"></div>
-                </div>
+              <!-- Post title -->
+              <div class="col-md-6  form-group title-input hide-it" id="input-title">
+                <h5>Slot Title</h5>
+                <input type="text" class="form-control" name="post-title" placeholder="Enter Here" id="post-title">
               </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="block-head dark">
-              <h4>Slot Details</h4>
-            </div>
-            <div class="block-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="title">Slot Title:</label>
-                  <input type="text" name="title" placeholder="Enter Here" />
-                </div>
-                <div class="col-md-6">
-                  <textarea name="description" rows="4">Slot Description</textarea>
-                </div>
-                <div class="col-md-12">
-                  <h5>Upload Image for your slot</h5>
-                  <label for="image-file" class="custom-file-upload">
-                    <i class="fa fa-cloud-upload"></i> Upload Image
-                  </label>
-                  <input name="image-file" id="image-file" class="form-control-file d-inline" type="file" />
+              <!-- Post details -->
+              <div class="col-md-12 form-group details-input hide-it" id="details-input">
+                <h5>Slot Details</h5>
+                <textarea placeholder="Enter the slot details here" class="form-control" name="post-details" id="post-details"></textarea>
+              </div>
+              <!-- File chooser -->
+              <div class="col-md-12 form-group choose-file hide-it" id="file-chooser">
+                <h5>Upload Image for your slot</h5>
+                <label for="image-file" class="custom-file-upload">
+                  <i class="fa fa-cloud-upload"></i> Upload Image
+                </label>
+                <input name="image-file" id="image-file" class="form-control-file d-inline" type="file" />
+                <!--<input type="file" class="form-control-file d-inline" name="image-file" id="image-file">-->
+                <img class="hide-it" id="image-preview" src="#" alt="image-preview" style="width:200px" />
+              </div>
 
-                  <img class="hide-it" id="image-preview" src="#" alt="image-preview" style="width:200px" />
-                </div>
-                <div class="col-md-12">
-                  <h5>Stand out in the Market</h5>
-                  <label class="ccontainer">Featured Slot
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="ccontainer">Urgent Slot
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <!-- <div class="checkbox-div">
-                    <input type="checkbox" name="featured">
-                    <span class="checkbox-helper">Featured</span>
-                  </div>
-                  <div class="checkbox-div">
-                    <input type="checkbox" name="urgent">
-                    <span class="checkbox-helper">Urgent</span>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="block-head dark">
-                  <h4>Select the Date</h4>
-                </div>
-                <div class="block-body">
-                  <input type="date" class="form-control-file d-inline" id="available-date">
+              <!-- Date -->
+              <div class="col-md-12 form-check date-pick hide-it" id="date-pick">
+                <h5>Select the Date</h5>
+                <input type="date" class="form-control-file d-inline" id="available-date">
 
-                  <div class="form-group" id="time-slotz">
-                    <div class="d-flex">
-                      <h5 class="time-slot-head">Time Slots</h5>
-                      <div class="add-time-slot" id="add-time-slot">Add New Slot</div>
-                    </div>
-                    <div id="slots" class="row"></div>
+                <div class="form-group" id="time-slotz">
+                  <div class="d-flex">
+                    <h5 class="time-slot-head">Time Slots</h5>
+                    <div class="add-time-slot" id="add-time-slot">Add New Slot</div>
                   </div>
+                  <div id="slots" class="row"></div>
                 </div>
               </div>
-            </div>
+              <!--<div class="add-time-slot" id="add-date-slot" onclick="adddate()">Add New Date</div>*-->
+
+              <!-- Submit button -->
+              <button id="submit-slot" class="btn btn-transparent hide-it">Submit the Slot</button>
+            </form>
           </div>
-          <div class="col-md-12">
-            <div class="block-head">
-              <h4>Contact Details</h4>
-            </div>
-            <div class="block-body">
-              <label for="email">Email:</label>
-              <input type="email" name="email" />
-              <br>
-              <label for="phone">Phone:</label>
-              <input class="phone" type="text" name="phone">
-            </div>
-          </div>
-        </form>
+        </div>
+
       </div>
     </div>
     <!-- Container End -->
@@ -342,8 +259,8 @@
   <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
   <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
   <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
-  <!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
- -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+
   <!-- Time Picker -->
   <script src="plugins/clockpicker/dist/bootstrap-clockpicker.min.js"></script>
   <script src="plugins/clockpicker/dist/jquery-clockpicker.min.js"></script>
@@ -351,10 +268,6 @@
   <script src="plugins/clockpicker/js/highlight.min.js"></script>
   <script src="plugins/clockpicker/js/html5shiv.js"></script>
   <script src="plugins/clockpicker/js/respond.min.js"></script>
-
-  <script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
-  <script src="plugins/jquery-locationpicker-plugin-master/src/locationpicker.jquery.js"></script>
-
   <!-- Custom JS -->
   <script src="js/scripts.js"></script>
 
@@ -409,27 +322,6 @@
     =============================-->
 
   <script> 
-    $('#us2').locationpicker({
-      enableAutocomplete: true,
-      enableReverseGeocode: true,
-      radius: 0,
-      inputBinding: {
-        latitudeInput: $('#us2-lat'),
-        longitudeInput: $('#us2-lon'),
-        radiusInput: $('#us2-radius'),
-        locationNameInput: $('#location')
-      },
-      onchanged: function (currentLocation, radius, isMarkerDropped) {
-        var addressComponents = $(this).locationpicker('map').location.addressComponents;
-        console.log(currentLocation);  //latlon  
-        updateControls(addressComponents); //Data
-      }
-    });
-
-    function updateControls(addressComponents) {
-      console.log(addressComponents);
-    }
-
     function readURL(input) {
       if (input.files && input.files[0]) {
         var reader = new FileReader();
