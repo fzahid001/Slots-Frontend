@@ -96,10 +96,10 @@
               <div class="row">
                 <div class="col-md-6">
                   <input type="text" class="category" name="category">
-                  <p class="helping">Browse for all Categories</p>
+                  <p id="category-switch" class="helping">Browse for all Categories</p>
                 </div>
                 <div class="col-md-3">
-                  <div id="main-categories">
+                  <div class="hide-it" id="main-categories">
                     <select name="main-category">
                       <option value="">Dentist</option>
                       <option value="">Teacher</option>
@@ -113,7 +113,7 @@
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div id="sub-categories">
+                  <div class="hide-it" id="sub-categories">
                     <select name="main-category">
                       <option value="">Dentist</option>
                       <option value="">Teacher</option>
@@ -127,12 +127,12 @@
                   </div>
                 </div>
                 <div class="col-md-12">
-                  <input type="button" value="Continue" class="continue">
+                  <input type="button" value="Continue" class="continue" id="category-enter">
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 hide-it" id="location-section">
             <div class="block-head">
               <h4>Location</h4>
             </div>
@@ -140,15 +140,18 @@
               <div class="row">
                 <div class="col-md-6">
                   <input type="text" class="location" name="location" id="location">
-                  <p class="helping">Select Location</p>
+                  <p class="helping" id="toggle-map-btn">Select Location</p>
                 </div>
                 <div class="col-md-6">
                   <div id="us2" style="width: 300px; height: 300px;"></div>
                 </div>
+                <div class="col-md-12">
+                  <input type="button" value="Continue" class="continue" id="maps-enter">
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 hide-it" id="details-section">
             <div class="block-head dark">
               <h4>Slot Details</h4>
             </div>
@@ -180,19 +183,14 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
-                  <!-- <div class="checkbox-div">
-                    <input type="checkbox" name="featured">
-                    <span class="checkbox-helper">Featured</span>
-                  </div>
-                  <div class="checkbox-div">
-                    <input type="checkbox" name="urgent">
-                    <span class="checkbox-helper">Urgent</span>
-                  </div> -->
+                </div>
+                <div class="col-md-12">
+                  <input type="button" value="Continue" class="continue" id="slot-details-enter">
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 hide-it" id="date-section">
             <div class="row">
               <div class="col-md-12">
                 <div class="block-head dark">
@@ -208,21 +206,25 @@
                     </div>
                     <div id="slots" class="row"></div>
                   </div>
+                  <input type="button" value="Continue" class="continue" id="date-enter">
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 hide-it" id="contact-section">
             <div class="block-head">
               <h4>Contact Details</h4>
             </div>
             <div class="block-body">
               <label for="email">Email:</label>
-              <input type="email" name="email" />
+              <input type="email" name="email" id="email-input"/>
               <br>
               <label for="phone">Phone:</label>
-              <input class="phone" type="text" name="phone">
+              <input class="phone" type="text" name="phone" id="phone-input">
             </div>
+          </div>
+          <div class="col-md-12 hide-it" id="submit-section">
+            <input type="submit" value="Add Slot">
           </div>
         </form>
       </div>
@@ -384,25 +386,37 @@
 
   <script> 
     $(document).ready(function () {
-      $("#select-category").change(function () {
-        $("#input-title").show();
+      $("#category-switch").click(function () {
+        $("#main-categories").toggle();
+        $("#sub-categories").hide();
       });
-      $("#sub-category-select").change(function () {
-        $("#input-title").show();
+      $("#main-categories").change(function () {
+        $("#sub-categories").show();
       });
-      $("#input-title").keyup(function () {
-        $("#details-input").show();
+      $("#category-enter").click(function () {
+        $("#location-section").show();
       });
-      $("#details-input").keyup(function () {
-        $("#file-chooser").show();
+      $("#toggle-map-btn").click(function () {
+        $("#us2").show();
       });
-      $("#file-chooser").change(function () {
-        $("#date-pick").show();
+      $("#maps-enter").click(function () {
+        $("#details-section").show();
       });
-      $("#date-pick").change(function () {
-        $("#submit-slot").show();
+      $("#slot-details-enter").click(function () {
+        $("#date-section").show();
+      });
+      $("#date-enter").click(function () {
+        $("#contact-section").show();
+      });
+      $("#email-input").change(function(){
+        $("#submit-section").show();
+      });
+      $("#phone-input").change(function(){
+        $("#submit-section").show();
       });
     });
+
+
   </script>
   <!--============================
     =    Image preview on upload    =
